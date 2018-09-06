@@ -1,15 +1,17 @@
 package vxg180002;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args){
-        BoundedQueue<Integer> b1 = new BoundedQueue<>(10);
+        SinglyLinkedList<Integer> l1 = new SinglyLinkedList<>();
+        Random rand = new Random();
         for(int i=0;i<12;i++){
-            System.out.println(b1.offer(i));
+            l1.add(rand.nextInt(10));
         }
 
-        Scanner in = new Scanner(System.in);
+        /*Scanner in = new Scanner(System.in);
         whileloop:
         while (in.hasNext()){
             int com = in.nextInt();
@@ -32,6 +34,6 @@ public class Main {
                 default:  // Exit loop
                     break whileloop;
             }
-        }
+        }*/
     }
 }
