@@ -29,6 +29,11 @@ public class Main {
                 case 4:  // check if the queue is empty
                     System.out.println("Queue is empty? "+b1.isEmpty());
                     break;
+                case 5:  // clear the queue
+                    b1.clear();
+                    System.out.println("Queue is empty? "+b1.isEmpty());
+                    System.out.println("Queue size is  "+b1.size());
+                    break;
                 default:  // Exit loop
                     break whileloop;
             }

@@ -33,7 +33,7 @@ public class BoundedQueue<T>{
     }
 
     public T peek(){
-        return (T) queue[front];
+        return (this.isEmpty())?null:(T) queue[front];
     }
 
     public T poll(){
@@ -51,7 +51,19 @@ public class BoundedQueue<T>{
         return size;
     }
 
+    public void clear(){
+        front = size = 0;
+        rear = -1;
+    }
+
     public boolean isEmpty(){
         return (size == 0);
     }
+
+    /*public void toArray(T[] arr){
+        int cur = front;
+        while((cur == rear) || ()){
+
+        }
+    }*/
 }
