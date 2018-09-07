@@ -34,6 +34,10 @@ public class Main {
                     System.out.println("Queue is empty? "+b1.isEmpty());
                     System.out.println("Queue size is  "+b1.size());
                     break;
+                case 6:  // convert queue to array
+                    Integer[] to_array = new Integer[b1.size()];
+                    b1.toArray(to_array);
+                    break;
                 default:  // Exit loop
                     break whileloop;
             }

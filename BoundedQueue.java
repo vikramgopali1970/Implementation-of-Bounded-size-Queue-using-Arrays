@@ -60,10 +60,15 @@ public class BoundedQueue<T>{
         return (size == 0);
     }
 
-    /*public void toArray(T[] arr){
+    public void toArray(T[] arr){
         int cur = front;
-        while((cur == rear) || ()){
-
+        for (int i=0;i<this.size();i++){
+            arr[i] = (T) queue[cur];
+            cur++;
         }
-    }*/
+        for (int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+
+    }
 }
